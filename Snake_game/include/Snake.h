@@ -5,13 +5,22 @@
 
 #include "Food.h"
 
+struct Tail{
+    int x, y;
+};
+
 class Snake
 {
 private:
-    int x, y;
+    int x = 0, y = 0;
     SDL_Rect snakeHead;
+
     bool isActive;
-    float frameCounter;
+    float frameCounter = 0;
+
+    Tail tail[255];
+    int tail_len = 0;
+    int tail_start = 0, tail_end = 0;
 public:
     int vx = 0, vy = 0;
 

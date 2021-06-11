@@ -12,6 +12,7 @@ Food::~Food()
 {
 
 }
+
 void Food::Move() {
     srand(time(0));
     x = rand() % 50;

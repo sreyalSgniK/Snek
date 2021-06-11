@@ -27,7 +27,7 @@ int main(int argc, char* argv[]) {
 
         prevTime = currentTime;
         currentTime = SDL_GetTicks();
-        delta = (currentTime-prevTime) / 1000.0f;
+        delta = (currentTime - prevTime) / 1000.0f;
         //cout << delta << endl;
 
         while(SDL_PollEvent(&ev)) {
@@ -41,26 +41,34 @@ int main(int argc, char* argv[]) {
 
                 case SDLK_w:
                     cout << "W" << endl;
-                    snake.vx = 0;
-                    snake.vy = -1;
+                    if(snake.vy != 1) {
+                        snake.vx = 0;
+                        snake.vy = -1;
+                    }
                     break;
 
                 case SDLK_s:
                     cout << "S" << endl;
-                    snake.vx = 0;
-                    snake.vy = 1;
+                    if(snake.vy != -1) {
+                        snake.vx = 0;
+                        snake.vy = 1;
+                    }
                     break;
 
                 case SDLK_a:
                     cout << "A" << endl;
-                    snake.vx = -1;
-                    snake.vy = 0;
+                    if(snake.vx != 1) {
+                        snake.vx = -1;
+                        snake.vy = 0;
+                    }
                     break;
 
                 case SDLK_d:
                     cout << "D" << endl;
-                    snake.vx = 1;
-                    snake.vy = 0;
+                    if(snake.vx != -1) {
+                        snake.vx = 1;
+                        snake.vy = 0;
+                    }
                     break;
                 }
             }

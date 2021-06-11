@@ -1,21 +1,21 @@
 # depslib dependency file v1.0
-1623242861 source:d:\coding\c++\project\sdl\snake_test\snake_game\main.cpp
+1623411528 source:d:\coding\c++\project\sdl\snake_test\snake_game\main.cpp
 	<iostream>
 	<SDL2/SDL.h>
 	"Snake.h"
 	"Food.h"
 
-1623242799 d:\coding\c++\project\sdl\snake_test\snake_game\include\snake.h
+1623413455 d:\coding\c++\project\sdl\snake_test\snake_game\include\snake.h
 	<SDL2/SDL.h>
 	"Food.h"
 
-1623242897 source:d:\coding\c++\project\sdl\snake_test\snake_game\src\snake.cpp
+1623413391 source:d:\coding\c++\project\sdl\snake_test\snake_game\src\snake.cpp
 	<iostream>
 	<iomanip>
 	"Snake.h"
 	"Food.h"
 
-1623242642 source:d:\coding\c++\project\sdl\snake_test\snake_game\src\food.cpp
+1623411354 source:d:\coding\c++\project\sdl\snake_test\snake_game\src\food.cpp
 	<stdlib.h>
 	<time.h>
 	"Food.h"
